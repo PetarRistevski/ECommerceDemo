@@ -1,0 +1,151 @@
+<!DOCTYPE  html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<!-- Section Content -->
+<div th:fragment="content">
+    <section id="home" class="g-bg-img-hero g-pos-rel u-bg-overlay g-bg-darkblue-opacity-0_7--after g-pt-150"
+             style="background-image: url(/images/adidas-background.jpg);">
+        <div class="container g-max-width-750 u-bg-overlay__inner g-color-white g-mb-60">
+            <!-- Countdown v4 -->
+            <div class="js-countdown text-center text-uppercase u-countdown-v4 g-mb-40 g-mb-70--md"
+                 data-end-date="2018/06/15"
+                 data-month-format="%m"
+                 data-days-format="%D"
+                 data-hours-format="%H"
+                 data-minutes-format="%M"
+                 data-seconds-format="%S">
+                <div class="d-inline-block g-font-size-12 g-px-10 g-px-50--md g-py-15">
+                    <div class="js-cd-days g-font-size-20 g-font-size-40--md g-font-weight-700 g-line-height-1 g-mb-5">
+                        12
+                    </div>
+                    <span>Денови</span>
+                </div>
+
+                <div class="d-inline-block g-font-size-12 g-brd-left g-brd-white-opacity-0_4 g-px-10 g-px-60--md g-py-15">
+                    <div class="js-cd-hours g-font-size-20 g-font-size-40--md g-font-weight-700 g-line-height-1 g-mb-5">
+                        01
+                    </div>
+                    <span>Часови</span>
+                </div>
+
+                <div class="d-inline-block g-font-size-12 g-brd-left g-brd-white-opacity-0_4 g-px-10 g-px-60--md g-py-15">
+                    <div class="js-cd-minutes g-font-size-20 g-font-size-40--md g-font-weight-700 g-line-height-1 g-mb-5">
+                        52
+                    </div>
+                    <span>Минути</span>
+                </div>
+
+                <div class="d-inline-block g-font-size-12 g-brd-left g-brd-white-opacity-0_4 g-px-10 g-px-50--md g-py-15">
+                    <div class="js-cd-seconds g-font-size-20 g-font-size-40--md g-font-weight-700 g-line-height-1 g-mb-5">
+                        52
+                    </div>
+                    <span>Секунди</span>
+                </div>
+            </div>
+            <!-- End Countdown v4 -->
+
+            <h3 class="text-center text-uppercase h2 g-font-weight-700 g-font-size-40 g-font-size-60--md g-color-white g-mb-30 g-mb-70--md">
+                ADIDAS МАКЕДОНИЈА</h3>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4 text-center text-md-left g-mb-30 g-mb-0--md">
+                    <div class="media">
+                        <div class="media-left d-flex align-self-center g-hidden-sm-down g-mr-20">
+                            <i class="fa fa-calendar g-font-size-27 g-color-white-opacity-0_5"></i>
+                        </div>
+
+                        <div class="media-body text-uppercase">
+                            <p class="g-mb-5"><strong class="g-font-size-14 g-color-white-opacity-0_5">Кога</strong></p>
+                            <h3 class="h3 g-font-size-15 g-color-white mb-0">15 Јуни 2018</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-5 text-center text-md-left g-mb-30 g-mb-0--md">
+                    <div class="media">
+                        <div class="media-left d-flex align-self-center g-hidden-sm-down g-mr-20">
+                            <i class="fa fa-map-marker g-font-size-27 g-color-white-opacity-0_5"></i>
+                        </div>
+
+                        <div class="media-body text-uppercase">
+                            <p class="g-mb-5"><strong class="g-font-size-14 g-color-white-opacity-0_5">Каде</strong></p>
+                            <h3 class="h3 g-font-size-15 g-color-white mb-0">Факултет за Информатички Науки и
+                                Компјутерско
+                                Инженерство</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-center text-md-right">
+                    <a class="btn btn-lg text-uppercase u-btn-white g-font-weight-700 g-font-size-11 g-color-white--hover g-bg-primary--hover g-brd-none rounded-0 g-py-18 g-px-20"
+                       href="https://finkiilt.typeform.com/to/EsZDrE">Најави присуство</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Content -->
+
+
+    <!-- Section Content -->
+    <section id="guests" class="g-py-100">
+        <div class="container">
+            <div class="text-center g-mb-70">
+            </div>
+        </div>
+
+        <div class="js-carousel u-carousel-v1 g-pb-50"
+             data-infinite="true"
+             data-center-mode="true"
+             data-center-padding="20px"
+             data-slides-show="4"
+             data-focus-on-select="true"
+             data-arrows-classes="u-arrow-v1 g-absolute-centered--x g-bottom-0 g-width-40 g-height-40 g-font-size-20 g-color-white g-bg-primary g-bg-black--hover g-transition-0_2 g-transition--ease-in"
+             data-arrow-left-classes="fa fa-angle-left g-ml-minus-25"
+             data-arrow-right-classes="fa fa-angle-right g-ml-30"
+             data-responsive='[{
+               "breakpoint": 1200,
+               "settings": {
+                 "slidesToShow": 3
+               }
+             }, {
+               "breakpoint": 992,
+               "settings": {
+                 "slidesToShow": 1,
+                 "centerPadding": "100px"
+               }
+             }, {
+               "breakpoint": 768,
+               "settings": {
+                 "slidesToShow": 1,
+                 "centerPadding": "60px"
+               }
+             }, {
+               "breakpoint": 576,
+               "settings": {
+                 "slidesToShow": 1,
+                 "centerPadding": "40px"
+               }
+             }]'>
+
+            <div th:each="product : ${products}" class="js-slide g-parent g-px-15 g-pb-30">
+                <article>
+                     <a th:href="'/products/'+${product.id}">
+
+                         <img class="img-fluid width-100" th:src="'/rest/product/image/'+${product.id}" alt="Image description">
+
+                        <div class="u-shadow-v24--active g-pa-30">
+                            <header class="text-uppercase g-mb-20">
+                             <h3 class="g-font-weight-700 g-font-size-14 g-mb-5" th:text="${product.name}"></h3>
+                                <p th:text="${product.description}"></p>
+                                <h3 class="g-font-weight-700 g-font-size-14 g-mb-5" th:text="${product.price}"></h3>
+                            </header>
+                        </div>
+                    </a>
+                </article>
+            </div>
+
+
+        </div>
+    </section>
+</div>
+</html>

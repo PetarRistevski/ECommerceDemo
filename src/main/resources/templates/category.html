@@ -1,0 +1,30 @@
+<div th:fragment="content">
+    <section id="home" class="g-bg-img-hero g-pos-rel  g-pt-100">
+        <div class="container">
+            <label>Реден Број на Категорија:</label>
+            <p th:text="${category.id}"></p>
+
+            <br />
+
+            <br>
+            <label>Достапни продукти од оваа категорија:</label>
+            <!--<p th:text="${category.getName()}"></p>-->
+
+            <div class="row">
+                <div th:each="product : ${products}" class="col-md-3 js-slide g-parent g-px-15 g-pb-30">
+                    <article>
+                            <a th:href="'/products/'+${product.id}">
+                                <img class="img-fluid width-100" th:src="'/rest/product/image/'+${product.id}" alt="Image description">
+                                <div class="u-shadow-v24--active g-pa-30">
+                                    <header class="text-uppercase g-mb-20">
+                                        <h3 class="g-font-weight-700 g-font-size-14 g-mb-5" th:text="${product.name}"></h3>
+                                        <p th:text="${product.description}"></p>
+                                    </header>
+                                </div>
+                            </a>
+                        </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
